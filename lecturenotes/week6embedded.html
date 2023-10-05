@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Embedded CSS</title>
+    <style>
+        h1 {color:deepskyblue;} /* changed the h1 color to blue*/
+        /*body selects everything */
+        body {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: hotpink;    
+        }
+        p, h1, a { /* grouped selecter */
+        font-size: 2em;
+        font-weight: bolder;
+        background-color: cornsilk;
+        }
+        /* in em 2 is twice default size of web browser */
+        p a {text-decoration: none;}
+        #secondpara {color:darkcyan;}
+        .yellow{color: yellow;}
+    </style>
+</head>
+<body>
+    <h1 class="yellow">CSS</h1>
+    <a class="yellow" href="http://www.amazon.com"> Amazon</a>
+    <p> <a href="http://www.ebay.com">Ebay</a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto deserunt praesentium culpa vero eum voluptates officiis doloremque ad corrupti error porro eius harum vel repellendus, et incidunt blanditiis nesciunt necessitatibus?</p>
+    <!-- each value for id must be unique -->
+    <p id="secondpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto deserunt praesentium culpa vero eum voluptates officiis doloremque ad corrupti error porro eius harum vel repellendus, et incidunt blanditiis nesciunt necessitatibus?</p>
+</body>
+</html>
