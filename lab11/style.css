@@ -1,13 +1,13 @@
 body {background-color: #D7E5CA;
-color: #8EACCD;
+color: black;
 font-size: 1em;}
-a:hover {color: #FFDBAA;}
-h1, h2 {color: #FFDBAA;}
+a:hover {color: black;}
+h1, h2 {color: black}
 nav{background-color: #D2E0FB; ;
 padding: 15px;
 margin-bottom: 30px;
 }
-nav a{color: #F9F3CC;}
+nav a{color: black;}
 nav a:hover{background-color: #F4EEEE;}
 @media only screen and (max-width: 800px){
     nav a{width: 100%;
