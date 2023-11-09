@@ -1,0 +1,30 @@
+body {background-color: #D7E5CA;
+color: #8EACCD;
+font-size: 1em;}
+a:hover {color: #FFDBAA;}
+h1, h2 {color: #FFDBAA;}
+nav{background-color: #D2E0FB; ;
+padding: 15px;
+margin-bottom: 30px;
+}
+nav a{color: #F9F3CC;}
+nav a:hover{background-color: #F4EEEE;}
+@media only screen and (max-width: 800px){
+    nav a{width: 100%;
+    display: block;
+    padding: 10px;}
+    span{display: none;}
+}
+.skip{
+    background-color: black;
+    padding: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    position: absolute; /* positions an element relative to the top left corner of the viewport */
+    top: 10px;
+    left: -999px; /* push of left side of screen*/
+}
+
+.skip:focus{
+    left: 10px;
+}
