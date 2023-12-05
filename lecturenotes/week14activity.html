@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 14 Activity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<style>
+    #subscribe {font-family: 'Shadows Into Light', cursive;}
+    #modal {
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            display: none;
+            padding: 5px;
+        }
+</style>
+<script>
+    function openModal () {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal () {
+            document.getElementById('modal').style.display = 'none';
+        }
+</script> 
+</head>
+<body>
+    <p id="subscribe" onclick="openModal();">Subscribe to Our Newsletter</p>
+
+    <div id="modal">
+        <p id="close-button" onclick="closeModal();">X</p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit" value="Subscirbe">
+    </form>
+    </div>
+</body>
+</html>

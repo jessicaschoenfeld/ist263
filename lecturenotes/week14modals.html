@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+        #modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            margin-left: -100px;
+            margin-top: -100px;
+            display: none;
+            padding: 5px;
+        }
+        #subscribe {
+            background-color: violet;
+            padding: 5px;
+            width: 250px;
+            text-align: center;
+        }
+        #close-button {
+            text-align: right;
+            margin: 0px;
+        }
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal () {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+    <img src="https://laferger.github.io/ist263/images/cupcakes.jpg" alt="banner of cupcakes">
+    <h1>Desserts</h1>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci alias id placeat quam, nulla consequuntur veniam doloribus rerum, ipsum, et sequi dolores aperiam. Non, earum ad architecto ratione tempore officiis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis autem officiis cum quasi eaque vero! Numquam in, est perferendis accusantium molestias, quis hic corrupti, illo voluptate dolores sed natus.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut error adipisci aliquid sed! Exercitationem placeat aliquid minima omnis aliquam nam voluptates, unde dolorum? Expedita vero maiores quod unde illo?</p>
+
+    <p id="subscribe" onclick="openModal();">Subscribe to Our Mailing List</p>
+
+    </div>
+    <div id="modal">
+        <p id="close-button" onclick="closeModal();">X</p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit" value="Subscirbe">
+    </form>
+    </div>
+
+</body>
+</html>
