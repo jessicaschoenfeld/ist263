@@ -15,25 +15,24 @@ h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
-
-p {
-  margin-bottom: 20px;
-}
+.ask {font-size: 1.2em;
+padding: 10px;}
 
 .qa-container {
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-
 .qa-container:last-child {
   border-bottom: none;
 }
 
 .submit {padding: 5px;}
-.formspace {padding: 10px;}
-h1 {font-size: 2.5em;
+.formspace {padding: 15px;}
+
+h1 {font-size: 3em;
 text-align: center;}
+
 .qa-container {
     display: flex;
 }
@@ -46,14 +45,25 @@ text-align: center;}
     margin: 50px;
     text-align: left;
 }
+ .picround {
+    justify-content: center;
+    width: 40%;
+    margin: 50px;
+    border-radius: 1em;
+}
 
+@media only screen and (max-width: 800px){
+    .picround{width: 60%;}
+    .qa-container{display: block;}
+}
+    
 </style>
 
 </head>
 <body>
     <nav>
-        <a href="home.html">Home |</a>
-        <a href="recs.html">Reccomendations |</a>
+        <a href="home.html">Home <span>|</span></a>
+        <a href="recs.html">Reccomendations <span>|</span></a>
         <a href="questionanswer.html">Q&A</a>
     </nav>
 
@@ -67,46 +77,63 @@ text-align: center;}
     <p>
         The simple answer here is studying abroad is not luxurious travel. You may need to take that 8    hour bus ride or stay at a destination a little farther than wanted but it is all worth it in the end. I also advise to book stuff in advanced because that is always cheaper. 
     </p>
-</div>
-<div class="qa-pic">
-<img src="../projectimages/heartpizza.jpeg" alt="heart pizza">  
-</div> 
-</div>
-
-<div class="qa-container">
     <h3>How do you know where to stay in each place? </h3>
     <p>
         Research, research, research! We stayed mostly in hostels and airbnbs. This can sometimes be more dangerous but if you do your research, you will be ok. Make sure to always look at reviews and if there is any type of red flag, I recommend looking for some place new.
     </p>
-    <img src="../projectimages/romecolleseum.jpeg" alt="colleseum">   
+</div>
+<div class="qa-pic">
+<img src="../finalprojimages/heartpizza.jpg" alt="heart pizza" class="picround">  
+</div> 
 </div>
 
 <div class="qa-container">
+<div class="qa-answer">
     <h3>How did you know what to do in each country?</h3>
     <p>
         You don’t! Again, you need to put in time and work. Do your research! Whether that is a google search or asking a friend look into stuff before you go. Tik tok was a huge recourse for me because it gave great advice and recommendations. Make sure you don’t get caught in tourist traps.
     </p>
-<img src="../projectimages/budapestferrisw.jpeg" alt="ferris wheel">
-</div>
-
-<div class="qa-container">
     <h3>How do I make sure I am being safe?</h3>
     <p>
         My first rule is always to be respectful. We are known as the loud obnoxious Americans so break that stereotype. Also, always google “things I should know before traveling to …”. Some places have weird laws to abide by, so it is always good to be aware.
-    </p>   
-<img src="../projectimages/amsterdam.jpeg" alt="amsterdam">
+    </p> 
+</div>
+<div class="qa-pic">
+    <img src="../finalprojimages/colleseum.jpg" alt="the rome colleseum" class="picround">  
+</div> 
 </div>
 
 <div class="qa-container">
+<div class="qa-answer">
     <h3>What should I pack for my trip?</h3>
     <p>Packing for months in a small suitcase is very hard. Pack your most staple items that you can swap around with other things to look good. Also remember people dress a little more conservative in Europe so no ripped jeans or crops tops, look classy. You will also do a ton of shopping there so save some room in your luggage.
     </p>  
-<img src="../projectimages/milan.jpeg" alt="milan">
+    <h3>How do I immerses myself into the culture?</h3>
+    <p>This can seem very imimitading at first but is an experience that really pays off. The reason you are studying abroad is to step out of your comfort zone. So, do that! It is easy to do things that you are comfortable with but that isn't as valuable. When you visit a new place always try their home cuisine (it may suprise you). In addition, do the "boring" stuff like going to museums, and walking tours. You always get something good out of it.</p>  
 </div>
+<div class="qa-pic">
+<img src="../finalprojimages/milanselfie.jpg" alt="jess in milan on duomo roof" class="picround">
+</div>
+</div>
+
+<div class="qa-container">
+<div class="qa-answer">
+    <h3>What do I do when I get homesick?</h3>
+    <p>Now although you are having a lot of fun you may still get homesick. That is normal! I reccomend really making an effort to talk to your family and friends at home. It is difficult with the time differnce but find a day and time that works for you and stuck with it. If you are having a great case of home sickness do something that reminds you of home. It is ok to take a step back and relac for a second, abroad life is exhausting.</p>
+    <h3>Do you really walk that much?</h3>
+    <p>
+        100%!! I was walking almost 20,000 steps everyday. You don't realize how much you are actually walking which is great but it is much more noraml to walk in european cities and it also a great way to see things. Make sure you pack a comfortable pair of walking shoes.
+    </p> 
+</div>
+<div class="qa-pic">
+<img src="../finalprojimages/amsterdamcanal.jpg" alt="amsterdam canal and houses in the back in the spring" class="picround">
+</div>
+</div>
+
 </main>  
 
     <form action="https://formspree.io/f/xknlqqrq" method="POST" class="formspace">
-        <label>Ask me more questions here!:</label> <br>
+        <label class="ask">Ask me more questions here!:</label> <br>
         <textarea id="questions" name="questions" rows="3" cols="30"></textarea><br>
         <input type="submit" value="Submit" class="submit">
     </form>

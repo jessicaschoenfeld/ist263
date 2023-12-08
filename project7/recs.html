@@ -10,22 +10,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../finalprojimages/favicon.ico">
 <style>
+
 body {font-family: 'Italiana', sans-serif;}
+
+.center {text-align: center;
+font-size: 3em;}
+h2 {font-size: 2em;
+text-align: center;}
+h3 {font-size: 1.5em;
+text-align: center;}
+
+.container, .container2 {
+    display: flex;
+}
+
+.info-container,.info-container2 {
+    text-align: left;
+    margin: 5%;
+}
+
+.info-container2 {order: 2;}
+.img-container2 {order:1;}
+
 </style>
 </head>
 <body>
     <nav>
-        <a href="home.html">Home |</a>
-        <a href="recs.html">Reccomendations |</a>
+        <a href="home.html">Home <span>|</span></a>
+        <a href="recs.html">Reccomendations <span>|</span></a>
         <a href="questionanswer.html">Q&A</a>
     </nav> 
 <main>
-<h1>Where Did Jess Travel?</h1>
+<h1 class="center">Where Did Jess Travel?</h1>
 <details>
     <summary>What's this page about?</summary>
         <p>On this page I will go through some of the countries that I visited.I am going to highlight activities, food reccomendations, and where we stayed. Lastly, I will go over tips for each location. I also included lots of pictures! As pictures speak a thousand words!</p>
 </details>
 
+<div class="container">
+<div class="info-container">
 <h2>Switzerland</h2>
 <h3>Interlaken</h3>
 <p>Description: An absolute beautiful town in Switzerland that makes you feel like you are in a Christmas village. A lot of outdoor activities and chocolate focused festivities. It is surrounded by a beautiful blue lake.</p>
@@ -36,10 +59,6 @@ body {font-family: 'Italiana', sans-serif;}
     <li>Skiing: They have ski rentals in town, and you can take a train to the mountain. It is called the Jungfrau region. Warning: you need to be an experienced skier it is not easy.</li>
     <li>Paragliding & Skydiving: I didn’t do this, but Interlaken is known for these activities so do your research.</li>
 </ul>   
-<img src="../projectimages/interlaken.jpeg" alt="interlaken scenery">
-<img src="../projectimages/canoepic.jpeg" alt="canoe in interlaken">
-<img src="../projectimages/chocomaking.jpeg" alt="chocolate making">
-<img src="../projectimages/skitrip.jpeg" alt="skiing">
 
 <h4>Food</h4>
 <ul>
@@ -61,7 +80,16 @@ body {font-family: 'Italiana', sans-serif;}
     <li>If you are in Florence, do Bus2Alps company. They made the whole experience very seamless as they guided you through skiing and other activities.</li>
     <li>If you are to ski, make sure you have a buddy and have skied before. It is challenging so be aware of that. If you can’t ski, you can still go and enjoy the mountains.</li>
 </ul>
+</div>
+<div class="img-container">
+<img src="../projectimages/canoepic.jpeg" alt="canoe in interlaken">
+<img src="../projectimages/chocomaking.jpeg" alt="chocolate making">
+<img src="../projectimages/skitrip.jpeg" alt="skiing">
+</div>
+</div>
 
+<div class="container2">
+<div class="info-container2"
 <h3>Zurich</h3>
 <p>Description: Another beautiful city in Switzerland. I went here in May and everything was so green and crisp. Zurich is more like a real city with a lot of shopping, restaurants, tall buildings, etc.</p>
 <h4>Activities</h4>
@@ -77,9 +105,6 @@ body {font-family: 'Italiana', sans-serif;}
     <li> Zeughauskeller: classic Swiss beer hall</li>
     <li>Roots: Healthy lunch spot</li>   
 </ul> 
-<img src="../projectimages/zurichfood.jpeg" alt="cheese fondue">
-<img src="../projectimages/zurich.jpeg" alt="zurich street">
-<img src="../projectimages/lucerne.jpeg" alt="Lucerne portrait">
 
 <h4>Where we stayed/how we got there:</h4>
 <ul>
@@ -93,7 +118,13 @@ body {font-family: 'Italiana', sans-serif;}
     <li>Everything is very expensive here as well so plan accordingly.</li>
     <li>Zurich is a great destination to do day trips from. For example, we went to Lucerne which is an hour train, and it was like a fairyland.</li>
 </ul>
-
+</div>
+<div class="img-container2">
+<img src="../projectimages/zurichfood.jpeg" alt="cheese fondue">
+<img src="../projectimages/zurich.jpeg" alt="zurich street">
+<img src="../projectimages/lucerne.jpeg" alt="Lucerne portrait">
+</div>
+</div>
 <h2>Austria</h2>
 <h3>Vienna</h3>
 <p>Description: This is a beautiful city filled with a lot of history. A great place to visit if you are looking to learn about European history but also have some fun.</p>
