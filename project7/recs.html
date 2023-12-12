@@ -20,17 +20,23 @@ text-align: center;}
 h3 {font-size: 1.5em;
 text-align: center;}
 
-.container, .container2 {
+.container, .container2, .container3, .container4, .container5, .container6, .formcontain {
     display: flex;
 }
 
-.info-container,.info-container2 {
+.info-container, .info-container2, .info-container3, .info-container4, .info-container5, .info-container6 {
     text-align: left;
     margin: 5%;
 }
 
-.info-container2 {order: 2;}
-.img-container2 {order:1;}
+.img-container, .info-container, .img-container2, .info-container2,.img-container3, .info-container3, .info-container4, .img-container4, .info-container5, .img-container5, .info-container6, .img-container6, .italyform, .otherform {flex: 2;}
+
+.info-container2,.img-container, .info-container4, .info-container6 {order: 2;}
+.img-container2, .info-container, .img-container4, .img-container6 {order:1;}
+
+@media only screen and (max-width: 800px){
+    img {display: block;}
+}
 
 </style>
 </head>
@@ -80,6 +86,7 @@ text-align: center;}
     <li>If you are in Florence, do Bus2Alps company. They made the whole experience very seamless as they guided you through skiing and other activities.</li>
     <li>If you are to ski, make sure you have a buddy and have skied before. It is challenging so be aware of that. If you can’t ski, you can still go and enjoy the mountains.</li>
 </ul>
+
 </div>
 <div class="img-container">
 <img src="../projectimages/canoepic.jpeg" alt="canoe in interlaken">
@@ -89,7 +96,7 @@ text-align: center;}
 </div>
 
 <div class="container2">
-<div class="info-container2"
+<div class="info-container2">
 <h3>Zurich</h3>
 <p>Description: Another beautiful city in Switzerland. I went here in May and everything was so green and crisp. Zurich is more like a real city with a lot of shopping, restaurants, tall buildings, etc.</p>
 <h4>Activities</h4>
@@ -125,6 +132,9 @@ text-align: center;}
 <img src="../projectimages/lucerne.jpeg" alt="Lucerne portrait">
 </div>
 </div>
+
+<div class="container3">
+<div class="info-container3">
 <h2>Austria</h2>
 <h3>Vienna</h3>
 <p>Description: This is a beautiful city filled with a lot of history. A great place to visit if you are looking to learn about European history but also have some fun.</p>
@@ -133,8 +143,6 @@ text-align: center;}
     <li>Walking Tours! Soak up the city history</li>
     <li>Museums</li>
 </ul>   
-<img src="../projectimages/austria.jpeg" alt="austria building">
-<img src="../projectimages/austriafood.jpeg" alt="austria burger">
 
 <h4>Food</h4>
 <ul>
@@ -154,7 +162,15 @@ text-align: center;}
     <li>Try their cuisine it is delicious.</li>
     <li>Walk around and get lost in the streets and their beautiful architecture.</li>
 </ul>
+</div>
+<div class="img-container3">
+    <img src="../projectimages/austria.jpeg" alt="austria building">
+    <img src="../projectimages/austriafood.jpeg" alt="austria burger">
+</div>
+</div>
 
+<div class="container4">
+<div class="info-container4">
 <h2>Hungary</h2>
 <h3>Budapest</h3>
 <p>Description: Such an underrated city! We had so much fun here and it was very cheap and there were a ton of things to do. Amazing shopping and amazing food. We only spent 24 hours here as well but wish we had more time as there are so many things to explore in the city.</p>
@@ -167,8 +183,7 @@ text-align: center;}
     <li>Ferris Wheel in city center</li>
     <li>Thermal baths: it seems gross, but it is a very cool experience</li>
 </ul>   
-<img src="../projectimages/budapest.jpeg" alt="budapest">
-<img src="../projectimages/budapestpool.jpeg" alt="thermal baths">
+
 <h4>Food</h4>
 <ul>
     <li>Get a chimney cake.</li>
@@ -178,8 +193,7 @@ text-align: center;}
     <li>There is amazing food so just explore</li>
     <li>Simpla Kurtz- a really cool bar for going out</li>
 </ul> 
-<img src="../projectimages/budapesttoast.jpeg" alt="toast"> 
-<img src="../projectimages/budapestdessert.jpeg" alt="trendel dessert">
+
 
 <h4>Where we stayed/how we got there:</h4>
 <ul>
@@ -192,7 +206,17 @@ text-align: center;}
     <li>Figure out the bus system here, it is so easy, convenient, and cheap.</li>
     <li>Budapest can seem a little scary at first, but it is such an amazing city.</li>
 </ul>
+</div>
+<div class="img-container4">
+    <img src="../projectimages/budapest.jpeg" alt="budapest">
+    <img src="../projectimages/budapestpool.jpeg" alt="thermal baths">  
+    <img src="../projectimages/budapesttoast.jpeg" alt="toast"> 
+    <img src="../projectimages/budapestdessert.jpeg" alt="trendel dessert">
+</div>
+</div>
 
+<div class="container5">
+<div class="info-container5">
 <h2>Portugal</h2>
 <h3>Lisbon</h3>
 <p>Description: Lisbon is such a unique city with cobblestone roads and beautiful architecture. It is so lively and right near the beach. A great city to visit when it starts to get warm out.</p>
@@ -204,8 +228,6 @@ text-align: center;}
     <li>Day trip to Sintra</li>
     <li>Visit the famous Pink Street</li>
 </ul>   
-<img src="../projectimages/lisbonsurf.jpeg" alt="surfing in lisbon">
-<img src="../projectimages/pinkstreet.jpeg" alt="pinkstreet">
 
 <h4>Food</h4>
 <ul>
@@ -215,7 +237,6 @@ text-align: center;}
     <li>Coya Taco</li>
     <li>Pensao Amor- very cool bar</li>
 </ul> 
-<img src="../projectimages/lisbondessert.jpeg" alt="lisbon dessert">
 
 <h4>Where we stayed/how we got there:</h4>
 <ul>
@@ -230,8 +251,17 @@ text-align: center;}
     <li>Ubers are very cheap here so take advantage.</li>
     <li>Bring the right shoes the streets are steep and slippery.</li>
 </ul>
-<img src="../projectimages/surfscenery.jpeg" alt="surf">
+</div>
+<div class="img-container5">
+    <img src="../projectimages/lisbonsurf.jpeg" alt="surfing in lisbon">
+    <img src="../projectimages/pinkstreet.jpeg" alt="pinkstreet">   
+    <img src="../projectimages/lisbondessert.jpeg" alt="lisbon dessert">  
+    <img src="../projectimages/surfscenery.jpeg" alt="surf">  
+</div>
+</div>
 
+<div class="container6">
+<div class="info-container6">
 <h2>Italy</h2>
 <h3>Florence</h3>
 <p>Description: One of the most famous cities in Italy and it is for a reason. There are so many great places to eat, shops to explore, famous museums to see, and so much more. Really embrace the architecture and beauty that is Florence. The city is old fashioned but beautiful and fille with the nicest people.</p>
@@ -247,9 +277,6 @@ text-align: center;}
     <li>Pasta/pizza making classes.</li>
     <li>Other amazing museums</li>
 </ul>   
-<img src="../projectimages/pastamaking.jpeg" alt="pasta making">
-<img src="../projectimages/pontevecchio.jpeg" alt="ponte Vecchio">
-<img src="../projectimages/soccergame.jpeg" alt="soccer game">
 
 <h4>Food</h4>
 <ul>
@@ -272,9 +299,7 @@ text-align: center;}
     <li>La Vespe</li>
     <li>Melaleuca</li>
 </ul> 
-<img src="../projectimages/trufflepizza.jpeg" alt="truffle pizza">
-<img src="../projectimages/flowerpasta.jpeg" alt="flower pasta">
-<img src="../projectimages/panini.jpeg" alt="panini">
+
 
 <h4>Where we stayed/how we got there:</h4>
 <ul>
@@ -287,8 +312,21 @@ text-align: center;}
     <li>To find good gelato then need to either be in deep tins or just have no huge mounds</li>
     <li>Don’t fall for the tourist traps, do your research!</li>
 </ul>
+</div>
+<div class="img-container6">
+    <img src="../projectimages/pastamaking.jpeg" alt="pasta making">
+    <img src="../projectimages/pontevecchio.jpeg" alt="ponte Vecchio">
+    <img src="../projectimages/soccergame.jpeg" alt="soccer game">
+    <img src="../projectimages/trufflepizza.jpeg" alt="truffle pizza">
+    <img src="../projectimages/flowerpasta.jpeg" alt="flower pasta">
+    <img src="../projectimages/panini.jpeg" alt="panini">   
+</div>
+</div>
 </main>
 
+
+<div class="formcontain">
+<div class="otherform">
 <form action="https://formspree.io/f/xknlqqrq" method="POST">
     <label>Ask me about my other trips!</label> <br>
 <ul>
@@ -301,7 +339,9 @@ text-align: center;}
 </form>
 <img src="../projectimages/nicefrance.jpeg" alt="nice">
 <img src="../projectimages/prauge.jpeg" alt="prauge">
+</div>
 
+<div class="italyform">
 <form action="https://formspree.io/f/xknlqqrq" method="POST">
     <label>Ask me about the other places I’ve visited in Italy!</label> <br>
 <ul>
@@ -317,7 +357,8 @@ text-align: center;}
 </form>
 <img src="../projectimages/lucca.jpeg" alt="bike riding">
 <img src="../projectimages/cinqueterre.jpeg" alt="Cinque Terre">
-<img src="../projectimages/veniceboat.jpeg" alt="Venice">
+</div>
+</div>
 
 <footer>
 <hr>
