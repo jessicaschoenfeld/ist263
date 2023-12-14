@@ -46,10 +46,23 @@
     }
 
 </style>
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 <link rel="stylesheet" href="styleproj.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar" class="sticky">
         <a href="#main" class="skip" tabindex="1">Skip to Content</a>
         <a href="home.html">Home <span>|</span></a>
         <a href="recs.html">Reccomendations <span>|</span></a>
