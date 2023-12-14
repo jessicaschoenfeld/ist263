@@ -42,12 +42,16 @@ align-items:flex-end;
 
 .picturesize {
     width: 45%;
+    border-radius: 1em;
 }
 
 @media only screen and (max-width: 800px){
     .picturesize{width: 100%;}
     .img-container, .formcontain{display: block;}
 }
+
+.submit {display: block;
+margin: 8px;}
 
 </style>
 </head>
@@ -351,9 +355,8 @@ align-items:flex-end;
     <li>Prague, Czechia</li>
 </ul>
     <textarea id="question" name="questions" rows="3" cols="30"></textarea>
+    <input type="submit" value="Submit" class="submit">
 </form>
-<img src="../projectimages/nicefrance.jpeg" alt="nice">
-<img src="../projectimages/prauge.jpeg" alt="prauge">
 </div>
 
 <div class="italyform">
@@ -369,9 +372,8 @@ align-items:flex-end;
     <li>Cinque Terre</li>
 </ul>
     <textarea id="question1" name="questions" rows="3" cols="30"></textarea>
+    <input type="submit" value="Submit" class="submit">
 </form>
-<img src="../projectimages/lucca.jpeg" alt="bike riding">
-<img src="../projectimages/cinqueterre.jpeg" alt="Cinque Terre">
 </div>
 </div>
 
