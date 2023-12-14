@@ -27,3 +27,17 @@ footer img {
     height: 50px;
     margin-top: 10px;
 }
+
+.skip{
+    background-color: black;
+    padding: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    position: absolute; /* positions an element relative to the top left corner of the viewport */
+    top: 10px;
+    left: -999px; /* push of left side of screen*/
+}
+
+.skip:focus{
+    left: 10px;
+}
